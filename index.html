@@ -13,22 +13,45 @@
     
     <header class="cabecalho">
         <div class="container">
-            <span class="cabecalho__menu-hamburguer"></span>
-            <img src="assets/Logo.svg" alt="Logo AluraBooks">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-End</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img class="container__imagem" src="assets/Logo.svg" alt="Logo AluraBooks">
         </div>
         <div class="container">
             <a href="#">
-                <img src="assets/Favoritos.svg" alt="Meus Favoritos">
+                <img class="container__imagem" src="assets/Favoritos.svg" alt="Meus Favoritos">
             </a>
             <a href="#">
-                <img src="assets/Compras.svg" alt="Carrinho de Compras">
+                <img class="container__imagem" src="assets/Compras.svg" alt="Carrinho de Compras">
             </a>
             <a href="#">
-                <img src="assets/Usuario.svg" alt="Meu Perfil">
+                <img class="container__imagem" src="assets/Usuario.svg" alt="Meu Perfil">
             </a>
         </div>
     </header>
     <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
     </main>
     <footer></footer>
 

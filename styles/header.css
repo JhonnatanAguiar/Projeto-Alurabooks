@@ -1,5 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
 .cabecalho {
+  min-width: 330px;
   background-color: var(--cor-principal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .cabecalho__menu-hamburguer {
@@ -7,4 +17,45 @@
   height: 24px;
   background-image: url("../assets/Menu.svg");
   display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container__imagem {
+  padding: 1em;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  min-width: 190px;
+  max-width: 255px;
+}
+
+.container__botao {
+  display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+  display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+  padding: 1em 2em;
+  background-color: var(--cor-principal);
+}
+
+.lista-menu__titulo {
+  color: var(--cor-destaque);
+  font-weight: bold;
+}
+
+.lista-menu__link {
+  background: var(--cor-secundaria);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
 }
