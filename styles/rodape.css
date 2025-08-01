@@ -44,3 +44,24 @@
 
 }
   
+@media screen and (min-width: 1728px) {
+
+  .rodape {
+    margin: 0;
+    padding: 3em 0;
+  }
+
+  .rodape__titulo {
+    margin: 0;
+    padding: 0 0 0 3em;
+  }
+
+  .lista-rodape {
+    border-left: 1px solid var(--cor-separador-rodape);
+    padding-left: 1.5em;
+  }
+
+  .lista-rodape__titulo {
+    margin: 0 0 1.5em 0;
+  }
+}
